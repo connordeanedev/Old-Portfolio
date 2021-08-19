@@ -1,0 +1,711 @@
+@media (min-width: 64em) {
+  .hero__name {
+    font-size: 6.25rem;
+  }
+  .hero__about {
+    font-size: 2.25rem;
+  }
+  .hero button,
+  .hero .button {
+    padding: 0.5rem 3rem;
+    border: solid 3px #ff2018;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    font-size: 2.25rem;
+    background-color: #151515;
+    color: #fff;
+  }
+  .hero button:hover {
+    background-color: #ff2018;
+    border-color: #ff2018;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+  }
+  .about__title {
+    font-size: 6.25rem;
+  }
+  .about__text {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 1.875rem;
+  }
+  .projects__title {
+    font-size: 6.25rem;
+  }
+  .projects__heading {
+    font-size: 1.875rem;
+    padding-bottom: 10rem;
+  }
+  .projects .aqualife__title {
+    font-size: 6.25rem;
+  }
+  .projects .aqualife__image img {
+    width: 50%;
+  }
+  .projects .aqualife__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .projects .rest__title {
+    font-size: 6.25rem;
+  }
+  .projects .rest__image img {
+    width: 50%;
+  }
+  .projects .rest__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .projects .abb__title {
+    font-size: 6.25rem;
+  }
+  .projects .abb__image img {
+    width: 50%;
+  }
+  .projects .abb__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .projects .connor__title {
+    font-size: 6.25rem;
+  }
+  .projects .connor__image img {
+    width: 50%;
+  }
+  .projects .connor__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .contact #contact {
+    width: 40%;
+  }
+  .contact__title {
+    font-size: 6.25rem;
+  }
+  .contact__heading {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 1.875rem;
+  }
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: #151515;
+  line-height: 1.3;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  padding: 2.1875rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-r {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+button,
+.button {
+  padding: 0.625rem 1.5rem;
+  border: solid 2px #ff2018;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  background-color: #151515;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #ff2018;
+  border-color: #ff2018;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 63.9376em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.red-text {
+  color: #ff2018;
+  margin-left: 10px;
+}
+
+.header__logo {
+  color: #fff;
+}
+
+.header__toggle > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__links a {
+  font-size: 1.125rem;
+  color: #fff;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 2.1875rem;
+}
+
+.header__links a:hover {
+  color: #ff2018;
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 6.25rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), to(transparent));
+  background-image: linear-gradient(#2e2e2e, transparent);
+}
+
+.header.open .header__toggle > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__toggle > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__toggle > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+
+.header__menu a {
+  display: block;
+  padding: 0.625rem;
+  color: #151515;
+  text-align: center;
+}
+
+.hero {
+  min-height: 100vh;
+}
+
+.hero__text {
+  margin-bottom: 15rem;
+}
+
+.hero__name {
+  font-size: 2.25rem;
+}
+
+.hero__about {
+  font-size: 0.875rem;
+}
+
+.hero__cta {
+  padding: 23px;
+}
+
+.hero__cta a {
+  color: #fff;
+}
+
+.about {
+  height: 100vh;
+  line-height: 1.6;
+}
+
+.about__title {
+  padding: 2.1875rem;
+  font-size: 2.25rem;
+}
+
+.about__text {
+  text-align: center;
+  padding: 0 2.1875rem 2.1875rem 2.1875rem;
+  font-size: 1.125rem;
+}
+
+.about__shields #html__logo {
+  padding: 0.5rem;
+  width: 6.25rem;
+  height: 12.5rem;
+}
+
+.about__shields #css__logo {
+  padding: 0.5rem;
+  width: 6.25rem;
+  height: 12.5rem;
+}
+
+.about__shields #js__logo {
+  padding: 0.5rem;
+  width: 6.25rem;
+  height: 12.5rem;
+}
+
+.projects__title {
+  font-size: 2.25rem;
+  padding-top: 2.1875rem;
+}
+
+.projects__heading {
+  font-size: 1.125rem;
+  padding-bottom: 2.1875rem;
+}
+
+.aqualife__title {
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+.aqualife__image img {
+  border-top: #ff2018 4px solid;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+.aqualife__bio {
+  padding: 0 2.1875rem 2.1875rem 2.1875rem;
+  text-align: center;
+}
+
+.rest__title {
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+.rest__image img {
+  border-top: #ff2018 4px solid;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+.rest__bio {
+  padding: 0 2.1875rem 2.1875rem 2.1875rem;
+  text-align: center;
+}
+
+.abb__title {
+  text-align: center;
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+.abb__image img {
+  border-top: #ff2018 4px solid;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+.abb__bio {
+  padding: 0 2.1875rem 2.1875rem 2.1875rem;
+  text-align: center;
+}
+
+.connor__title {
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+.connor__image img {
+  border-top: #ff2018 4px solid;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+.connor__bio {
+  padding: 0 2.1875rem 2.1875rem 2.1875rem;
+  text-align: center;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.contact__title {
+  font-size: 2.25rem;
+  padding-top: 2.1875rem;
+}
+
+.contact__heading {
+  font-size: 1.125rem;
+  padding-bottom: 2.1875rem;
+}
+
+.contact #contact input[type="text"],
+.contact #contact input[type="email"],
+.contact #contact input[type="tel"],
+.contact #contact input[type="url"],
+.contact #contact textarea,
+.contact #contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  color: #151515;
+}
+
+.contact #contact {
+  background: #ffffff;
+  border-top: red solid 10px;
+  padding: 25px;
+  height: 600px;
+  width: 80%;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contact #contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.contact #contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.contact fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.contact #contact input[type="text"],
+.contact #contact input[type="email"],
+.contact #contact input[type="tel"],
+.contact #contact input[type="url"],
+.contact #contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+.contact #contact input[type="text"]:hover,
+.contact #contact input[type="email"]:hover,
+.contact #contact input[type="tel"]:hover,
+.contact #contact input[type="url"]:hover,
+.contact #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.contact #contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+.contact #contact button[type="submit"] {
+  cursor: pointer;
+  width: 40%;
+  border: solid #ff2018 3px;
+  background: #151515;
+  color: #fff;
+  margin: 30px 0 5px;
+  padding: 14px;
+  font-size: 25px;
+  margin-left: 30%;
+}
+
+.contact #contact button[type="submit"]:hover {
+  background: red;
+  -webkit-transition: background 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact #contact button[type="submit"]:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact .copyright {
+  text-align: center;
+}
+
+.contact #contact input:focus,
+.contact #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+.contact ::-webkit-input-placeholder {
+  color: #888;
+}
+
+.contact :-moz-placeholder {
+  color: #888;
+}
+
+.contact ::-moz-placeholder {
+  color: #888;
+}
+
+.contact :-ms-input-placeholder {
+  color: #888;
+}
+
+.footer__links a {
+  font-size: 1.875rem;
+  color: #fff;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.has-fade {
+  visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
+@media (min-width: 64em) {
+  .hero__name {
+    font-size: 6.25rem;
+  }
+  .hero__about {
+    font-size: 2.25rem;
+  }
+  .hero button,
+  .hero .button {
+    padding: 0.5rem 3rem;
+    border: solid 3px #ff2018;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    font-size: 2.25rem;
+    background-color: #151515;
+    color: #fff;
+  }
+  .hero button:hover {
+    background-color: #ff2018;
+    border-color: #ff2018;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+  }
+  .about__title {
+    font-size: 6.25rem;
+  }
+  .about__text {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 1.875rem;
+  }
+  .projects__title {
+    font-size: 6.25rem;
+  }
+  .projects__heading {
+    font-size: 1.875rem;
+    padding-bottom: 10rem;
+  }
+  .projects .aqualife__title {
+    font-size: 6.25rem;
+  }
+  .projects .aqualife__image img {
+    width: 50%;
+  }
+  .projects .aqualife__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .projects .rest__title {
+    font-size: 6.25rem;
+  }
+  .projects .rest__image img {
+    width: 50%;
+  }
+  .projects .rest__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .projects .abb__title {
+    font-size: 6.25rem;
+  }
+  .projects .abb__image img {
+    width: 50%;
+  }
+  .projects .abb__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .projects .connor__title {
+    font-size: 6.25rem;
+  }
+  .projects .connor__image img {
+    width: 50%;
+  }
+  .projects .connor__bio {
+    padding: 1rem 25rem 5rem 25rem;
+    font-size: 1.875rem;
+  }
+  .contact #contact {
+    width: 40%;
+  }
+  .contact__title {
+    font-size: 6.25rem;
+  }
+  .contact__heading {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 1.875rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

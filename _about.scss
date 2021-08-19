@@ -1,0 +1,32 @@
+.about {
+  height: 100vh;
+  line-height: 1.6;
+  &__title {
+    padding: 2.1875rem;
+    font-size: $fontLa;
+  }
+
+  &__text {
+    text-align: center;
+    padding: 0 2.1875rem 2.1875rem 2.1875rem;
+    font-size: $fontMed;
+  }
+
+  &__shields {
+    #html__logo {
+      padding: 0.5rem;
+      width: 6.25rem;
+      height: 12.5rem;
+    }
+    #css__logo {
+      padding: 0.5rem;
+      width: 6.25rem;
+      height: 12.5rem;
+    }
+    #js__logo {
+      padding: 0.5rem;
+      width: 6.25rem;
+      height: 12.5rem;
+    }
+  }
+}

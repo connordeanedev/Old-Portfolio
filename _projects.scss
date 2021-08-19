@@ -1,0 +1,87 @@
+.projects {
+  &__title {
+    font-size: $fontLa;
+    padding-top: 2.1875rem;
+  }
+  &__heading {
+    font-size: $fontMed;
+    padding-bottom: 2.1875rem;
+  }
+}
+
+.aqualife {
+  &__title {
+    font-size: $fontXmed;
+    padding-bottom: 1rem;
+  }
+  &__image {
+    img {
+      border-top: $redColor 4px solid;
+      width: 80%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__bio {
+    padding: 0 2.1875rem 2.1875rem 2.1875rem;
+    text-align: center;
+  }
+}
+
+.rest {
+  &__title {
+    font-size: $fontXmed;
+    padding-bottom: 1rem;
+  }
+  &__image {
+    img {
+      border-top: $redColor 4px solid;
+      width: 80%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__bio {
+    padding: 0 2.1875rem 2.1875rem 2.1875rem;
+    text-align: center;
+  }
+}
+
+.abb {
+  &__title {
+    text-align: center;
+    font-size: $fontXmed;
+    padding-bottom: 1rem;
+  }
+  &__image {
+    img {
+      border-top: $redColor 4px solid;
+      width: 80%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__bio {
+    padding: 0 2.1875rem 2.1875rem 2.1875rem;
+    text-align: center;
+  }
+}
+
+.connor {
+  &__title {
+    font-size: $fontXmed;
+    padding-bottom: 1rem;
+  }
+  &__image {
+    img {
+      border-top: $redColor 4px solid;
+      width: 80%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__bio {
+    padding: 0 2.1875rem 2.1875rem 2.1875rem;
+    text-align: center;
+  }
+}

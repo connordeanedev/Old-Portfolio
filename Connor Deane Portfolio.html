@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="Connor%20Deane%20Portfolio_files/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="Connor%20Deane%20Portfolio_files/style.css">
+    <title>Connor Deane | Portfolio</title>
+</head>
+<body data-new-gr-c-s-check-loaded="8.869.0" data-gr-ext-installed="">
+<header class="header">
+    <div class="overlay has-fade"></div>
+    <nav class="container flex flex-jc-sb flex-ai-c">
+        <a href="http://127.0.0.1:5500/html/index.html" class="header__logo">
+            <h1>PORTFOLIO</h1>
+        </a>
+        
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </nav>
+    <div class="header__menu has-fade">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">CONTACT</a>
+    </div>    
+</header>
+
+<section class="hero flex flex-jc-c flex-ai-c">   
+    <div class="hero__text">
+       <div class="hero__name flex-ai-c flex-jc-c flex">CONNOR DEANE</div>
+       <div class="hero__about  flex-ai-c flex-jc-c flex">FRONT END WEB DEVELOPER</div>
+       <div class="hero__ctn flex flex-jc-c">
+           <button>CONTACT HERE</button>
+       </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about__title flex flex-jc-c">About Me</div>
+        <div class="about__text">
+            Innovative, confident, and reliable self-taught front-end 
+web developer with an in-depth understanding of front-end languages 
+including HTML5, CSS3, JavaScript, and knowledge using SASS to achieve 
+clean code. Excellent client communication and problem-solving skills 
+paired with the aptitude and desire to learn new things, reach targets, 
+and succeed. Ability to adapt to challenging circumstances, whilst 
+remaining professional and understanding. Determined and goal-orientated
+ whilst also being a keen learner, giving me an approachable and 
+friendly manner.
+        </div>
+        <div class="about__shields flex flex-jc-c">
+            <div class="about__html">
+                <img id="html__logo" src="Connor%20Deane%20Portfolio_files/html5%2520new.svg" alt="html__logo">
+            </div>
+            <div class="about__css">
+                <img id="css__logo" src="Connor%20Deane%20Portfolio_files/css3%2520new.svg" alt="css__logo">
+            </div>
+            <div class="about__js">
+                <img id="js__logo" src="Connor%20Deane%20Portfolio_files/javascript%2520new-4.svg" alt="js__logo">
+            </div>
+        </div>
+
+
+   
+</section>
+
+<section class="projects">
+<div class="projects__title flex flex-jc-c">My Projects</div>
+<div class="projects__heading flex flex-jc-c">Check Out My Work</div>
+<div class="projects__container">
+    <div class="projects__aqualife">
+        <div class="aqualife__title flex flex-jc-c">AquaLife</div>
+        <div class="aqualife__image">
+            <img src="Connor%20Deane%20Portfolio_files/AquaLife.JPG" alt="">
+        </div>
+        <div class="aqualife__bio flex flex-jc-c">Lorem ipsum, dolor sit
+ amet consectetur adipisicing elit. Suscipit rem accusantium aliquid 
+quod expedita sequi velit sapiente atque! Assumenda ratione saepe beatae
+ dolores voluptas sequi deleniti perferendis autem in rem officia minus 
+possimus numquam quae debitis nobis soluta, quisquam ullam!</div>
+    </div>
+</div>
+</section>
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<script src="Connor%20Deane%20Portfolio_files/app.js"></script>
+</body></html>

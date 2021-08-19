@@ -1,0 +1,80 @@
+.header {
+  &__logo {
+    color: $whiteText;
+  }
+  // Mobile Menu
+  &__toggle {
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $whiteText;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      font-size: $fontMed;
+      color: $whiteText;
+      transition: color 200ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 2.1875rem;
+      }
+
+      &:hover {
+        color: $redColor;
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 6.25rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(#2e2e2e, transparent);
+  }
+
+  //Menu open styles
+
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 1.625rem;
+    border-radius: 5px;
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: $darkBackground;
+      text-align: center;
+    }
+  }
+}

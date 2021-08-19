@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Connor Deane | Portfolio</title>
+</head>
+<body>
+<header class="header">
+    <div class="overlay has-fade"></div>
+    <nav class="container flex flex-jc-sb flex-ai-c">
+        <a href="./index.html" class="header__logo">
+            <h1>PORTFOLIO</h1>
+        </a>
+        
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+            
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+    <div class="header__menu has-fade">
+        <a id="menuHome" href="#home">HOME</a>
+        <a id="menuAbout" href="#about">ABOUT</a>
+        <a id="menuProjects" href="#projects">PROJECTS</a>
+        <a id="menuContact" href="#contact">CONTACT</a>
+    </div>    
+</header>
+
+<section class="hero flex flex-jc-c flex-ai-c">   
+    <div class="hero__text">
+       <div class="hero__name flex-ai-c flex-jc-c flex">CONNOR <span class="red-text"> DEANE</span></div>
+       <div class="hero__about  flex-ai-c flex-jc-c flex">FRONT END WEB DEVELOPER</div>
+       <div class="hero__cta flex flex-jc-c">
+           <button><a href="#contact"> CONTACT HERE</a></button>
+       </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about__title flex flex-jc-c">About <span class="red-text"> Me</span></div>
+        <div class="about__text">
+            Innovative, confident, and reliable self-taught front-end web developer with an in-depth understanding of front-end languages including HTML5, CSS3, JavaScript, and knowledge using SASS to achieve clean code. Excellent client communication and problem-solving skills paired with the aptitude and desire to learn new things, reach targets, and succeed. Ability to adapt to challenging circumstances, whilst remaining professional and understanding. Determined and goal-orientated whilst also being a keen learner, giving me an approachable and friendly manner.
+        </div>
+        <div class="about__shields flex flex-jc-c">
+            <div class="about__html">
+                <img id="html__logo" src="../img/html5 new.svg" alt="html__logo">
+            </div>
+            <div class="about__css">
+                <img id="css__logo" src="../img/css3 new.svg" alt="css__logo">
+            </div>
+            <div class="about__js">
+                <img id="js__logo" src="../img/javascript new-4.svg" alt="js__logo">
+            </div>
+        </div>
+
+
+   
+</section>
+
+<section class="projects" id="projects">
+<div class="projects__title flex flex-jc-c">My <span class="red-text"> Projects</span></div>
+<div class="projects__heading flex flex-jc-c">Check Out My Work</div>
+<div class="projects__container">
+    <div class="projects__aqualife">
+        <div class="aqualife__title flex flex-jc-c">AquaLife</div>
+        <div class="aqualife__image flex flex-jc-c">
+            <img src="../img/AquaLife.JPG" alt="">
+        </div>
+        <div class="aqualife__bio flex flex-jc-c ">Using minimalistic styling, and the correct image, the website has a modern layout, with eye-catching colours and interactive buttons. Created using HTML, CSS, Javascript, and Sass.</div>
+</div>
+    <div class="projects__rest">
+    <div class="rest__title flex flex-jc-c">Rest</div>
+    <div class="rest__image flex flex-jc-c">
+        <img src="../img/Rest.JPG" alt="">
+    </div>
+    <div class="rest__bio flex flex-jc-c ">A great background image gives a clear message of what is being offered, which really shows the importance of good design. With the addition of two centered call to action buttons that change colour when interacted with.</div>
+</div>
+    <div class="projects__abb">
+    <div class="abb__title flex flex-jc-c">Affordable Business <br> Branding</div>
+    <div class="abb__image flex flex-jc-c">
+        <img src="../img/connordeane.JPG" alt="">
+    </div>
+    <div class="abb__bio flex flex-jc-c ">Affordable business branding was designed for a mock tech branding company. It featured a landing page with call to action which opens users' email, allowing them to send a message straight to the company.
+        Build using HTML, CSS, Sass, Javascript.  </div>
+</div>
+    <div class="projects__connor">
+    <div class="connor__title flex flex-jc-c">Mordern Portfolio</div>
+    <div class="connor__image flex flex-jc-c">
+        <img src="../img/connordeane2.JPG" alt="">
+    </div>
+    <div class="connor__bio flex flex-jc-c ">A portfolio website for a freelance web developer. An SVG of a computer and phone was used along with a background splash to achieve a modern tech look.</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact__container">
+        <div class="contact__title flex flex-jc-c">Contact <span class="red-text"> Me</span></div>
+    </div>
+    <div class="contact__heading flex flex-jc-c flex-ai-c">
+        Drop me a message
+    </div>
+    <div class="contact__form flex flex-jc-c">
+        <form id="contact" action="https://formspree.io/f/meqpvarp" method="post" novalidate> 
+                    
+            <fieldset>
+              <input placeholder="Your Name" type="text" name="name" tabindex="1" >
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" name="_replyto" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your message here...." <textarea name="message"></textarea></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer__links flex flex-jc-r">
+        <a href="https://www.instagram.com/connordeane_dev/" target=”_blank”> <i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/connordeane20" target=”_blank”> <i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/connor-deane-524483168" target=”_blank”> <i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/connordeane20" target=”_blank”> <i class="fa fa-github"></i></a> 
+    </div>
+</footer>
+
+</body>
+<script src="../css/app.js"></script>
+</html>

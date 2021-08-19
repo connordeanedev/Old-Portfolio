@@ -1,0 +1,21 @@
+.hero {
+  min-height: 100vh;
+  &__text {
+    margin-bottom: 15rem;
+  }
+
+  &__name {
+    font-size: $fontLa;
+  }
+
+  &__about {
+    font-size: $fontSm;
+  }
+
+  &__cta {
+    padding: 23px;
+    a {
+      color: $whiteText;
+    }
+  }
+}

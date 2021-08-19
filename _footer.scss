@@ -1,0 +1,10 @@
+.footer {
+  &__links {
+    a {
+      font-size: $fontXmed;
+      color: $whiteText;
+      margin-right: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
